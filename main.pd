@@ -1,0 +1,71 @@
+#N canvas -8 -8 1362 685 12;
+#X text 146 10 Main;
+#X text 33 39 Sonidos que hacen los bichitos viviendo dentro de los
+árboles de Sakura, f 39;
+#X obj 403 467 cnv 15 450 80 empty empty empty 20 12 0 14 -180215 -66577
+0;
+#X obj 48 276 cnv 15 250 40 empty empty empty 20 12 0 14 -261234 -66577
+0;
+#X obj 1027 273 cnv 15 250 40 empty empty empty 20 12 0 14 -261234
+-66577 0;
+#X obj 637 45 tgl 40 0 empty empty empty 17 7 0 10 -260909 -1 -1 0
+1;
+#X text 636 22 Start!;
+#X obj 637 135 line;
+#X obj 640 161 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 637 184 5 0 0 0 - - -;
+#X obj 324 280 >= 0;
+#X obj 357 313 &&;
+#X obj 611 314 &&;
+#X obj 904 309 &&;
+#X obj 357 362 change;
+#X obj 611 361 change;
+#X obj 904 359 change;
+#X obj 357 419 tgl 15 0 intro empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 904 420 tgl 15 0 solucion empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 611 419 tgl 15 0 conflicto empty empty 17 7 0 10 -262144 -1
+-1 0 1;
+#X obj 1026 316 cnv 15 250 40 empty empty empty 20 12 0 14 -180215
+-66577 0;
+#X text 831 93 Stop!;
+#X msg 637 103 0 \, 1000 900000;
+#X text 341 103 De 0 a 1000 en 900000 ms (15 minutos);
+#X text 905 114 De 1000 a 0 en 10 ms;
+#X msg 804 114 1000 \, 0 10;
+#X text 81 286 Intro - De 0 a 2:55 minutos;
+#X text 415 475 Conflicto - De 2:56 a 4:28 minutos se apilan 4:29 a
+5:20 el ojo solo -->( poner distortion al comienzo y al final) 5:22
+a 5:40 transición a solución;
+#X text 1044 282 Resolución - De 5:41 a 7:44;
+#X text 1040 324 Loop - De 7:45 a 15 minutos;
+#X obj 394 279 <= 195;
+#X obj 566 277 >= 196;
+#X obj 650 277 <= 378;
+#X obj 841 274 >= 379;
+#X obj 924 275 <= 1000;
+#X connect 5 0 22 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 9 0 30 0;
+#X connect 9 0 31 0;
+#X connect 9 0 32 0;
+#X connect 9 0 33 0;
+#X connect 9 0 34 0;
+#X connect 10 0 11 0;
+#X connect 11 0 14 0;
+#X connect 12 0 15 0;
+#X connect 13 0 16 0;
+#X connect 14 0 17 0;
+#X connect 15 0 19 0;
+#X connect 16 0 18 0;
+#X connect 22 0 7 0;
+#X connect 25 0 7 0;
+#X connect 30 0 11 1;
+#X connect 31 0 12 0;
+#X connect 32 0 12 1;
+#X connect 33 0 13 0;
+#X connect 34 0 13 1;
